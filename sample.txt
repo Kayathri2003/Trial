@@ -1,0 +1,23 @@
+SSH
+ssh-keygen -t rsa -b 2048
+whoami
+hostname -I
+ssh-copy-id har@123.45.66.1
+sudo apt install openssh-server
+ssh har@123.45.66.1
+ssh har@123.45.66.1 'ls'
+ssh har@123.45.66.1 'cat q3.c'
+
+docker
+sudo apt update
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+cd webapp
+sudo docker build -t webapp .
+docker run -d -p 5000:5000 webapp
+erro:sudo usermod -aG docker $USER
+newgrp docker
+run
+http://localhost:5000
+
